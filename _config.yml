@@ -1,0 +1,14 @@
+safe:         false
+auto:         false
+server:       false
+
+source:       ./jekyll
+destination:  ../public/blog
+plugins:      ./_plugins
+
+future:       true
+lsi:          true
+pygments:     true
+markdown:     maruku
+permalink:    /:year/:month/:day/:title.html
+

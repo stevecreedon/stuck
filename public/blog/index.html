@@ -1,14 +1,16 @@
----
-layout: default
-title: Some title of the page
----
-
-<div id="home">
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <title>Some title of the page</title>
+  </head>
+<body>
+  <div id="home">
   <h1>Blog Posts</h1>
   <ul class="posts">
-     {% for post in site.posts %}
-       <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="/blog{{ post.url }}">{{ post.title }}</a></li>
-     {% endfor %}
+     
+       <li><span>08 Jul 2012</span> &raquo; <a href="/blog/2012/07/08/my-test-post.html">My test post</a></li>
+     
   </ul>
 
   <h1>Highlighted Talks</h1>
@@ -19,3 +21,6 @@ title: Some title of the page
   </ul>
 
 </div>
+
+</body>
+</html>
